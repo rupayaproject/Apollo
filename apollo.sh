@@ -101,7 +101,7 @@ run() {
   get_coinbase=$(echo $get_all_coinbases | awk '{print $1;}')
 
   rupaya \
-    --bootnodes "enode://daea23c08fc591109d1478543ed06fc714bd2b380c1eb4bc81e0d0e2ce75d900cfa8010fe127028366c4d8ff5e132246a6268a884152785946c4d13dccf2980e@206.189.18.217:30301" --syncmode "full" --gcmode "archive" \
+    --bootnodes "enode://504e40653c81b62634aae3c75cb0804f933fa05006dc9f63e50dda178a9b6fcd7de2360fcf77ccca93fe7e016d9e636b440c1db6d00053c2517130c240bed107@167.172.48.132:30301" --syncmode "full" --gcmode "archive" \
     --datadir ${DATADIR}/${NAME} --networkid 77 --port $PORT \
     --announce-txs \
     --rpc --rpccorsdomain "*" --rpcaddr 0.0.0.0 --rpcport 7050 --rpcvhosts "*" \
