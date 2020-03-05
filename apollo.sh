@@ -19,7 +19,7 @@ include () {
 include
 
 initGenesis() {
-  if [ ! -d ${DATADIR}/${NAME}/rupx]; then
+  if [ ! -d ${DATADIR}/${NAME}/rupx ]; then
     echo "No genesis found, creating genesis block..."
     rupaya --datadir ${DATADIR}/${NAME} init ./config/chain/mainnet/main.json
     echo

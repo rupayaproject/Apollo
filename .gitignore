@@ -12,3 +12,4 @@ log
 MANISFEST-*
 /networks
 mainnet.env
+config/chain/mainnet/.main.json.swp
