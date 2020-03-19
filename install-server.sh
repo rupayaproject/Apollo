@@ -4,7 +4,7 @@ WORK_DIR=$(pwd)
 
 # declare our system commands
 CMD_GO='go'
-CMD_TOMOCHAIN='$HOME/go-rupaya/build/bin/rupaya'
+CMD_TOMOCHAIN='$HOME/rupaya/build/bin/rupaya'
 
 ### Internal installation scripts to be used by calling install_generic ###
 
@@ -25,14 +25,14 @@ internal_install_go() {
   cd $WORK_DIR
 }
 
-internal_install_go-rupaya() {
+internal_install_rupaya() {
   cd $HOME
-  git clone 'https://github.com/rupayaproject/go-rupaya'
-  cd $HOME/go-rupaya && make all
-  sudo cp $HOME/go-rupaya/build/bin/rupaya /usr/local/bin
-  sudo cp $HOME/go-rupaya/build/bin/bootnode /usr/local/bin
-  sudo cp $HOME/go-rupaya/build/bin/puppeth /usr/local/bin
-  echo go-rupaya has been installed
+  git clone 'https://github.com/rupayaproject/rupaya'
+  cd $HOME/rupaya && make all
+  sudo cp $HOME/rupaya/build/bin/rupaya /usr/local/bin
+  sudo cp $HOME/rupaya/build/bin/bootnode /usr/local/bin
+  sudo cp $HOME/rupaya/build/bin/puppeth /usr/local/bin
+  echo rupaya has been installed
   cd $WORK_DIR
 }
 
@@ -51,7 +51,7 @@ fi
 install_generic () {
   case "$1" in
     go ) sys_command=$CMD_GO;;
-    go-rupaya ) sys_command=$CMD_TOMOCHAIN;;
+    rupaya ) sys_command=$CMD_TOMOCHAIN;;
   esac
 
   if command_exists $sys_command
@@ -75,7 +75,7 @@ install_generic () {
 
 internal_install_packages
 install_generic go
-install_generic go-rupaya
+install_generic rupaya
 echo Installation completed. Please restart this terminal window for changes to take effect.
 sudo rm -rf tmp/
 bash --login; exit

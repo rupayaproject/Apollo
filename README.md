@@ -1,6 +1,6 @@
 # Apollo
 
-### :rocket: Strap some rockets to go-rupaya
+### :rocket: Strap some rockets to rupaya
 
 ## Table of contents
 
@@ -13,7 +13,7 @@
     + [Connecting to our network with MetaMask](#connecting-to-our-network-with-metamask)
     + [Run latest dev branch](#run-latest-dev-branch)
   * [Common issues](#common-issues)
-  * [Upgrading go-rupaya](#upgrading-go-rupaya)
+  * [Upgrading rupaya](#upgrading-rupaya)
   * [Upgrade Apollo](#upgrade-apollo)
   * [Known bugs](#known-bugs)
 
@@ -26,11 +26,11 @@ Depending on your security level in your shell, the root password can be asked d
 
 `git clone https://github.com/rupayaproject/Apollo`
 
-If you don't have Golang and/or go-rupaya installed yet, run our installation script:
+If you don't have Golang and/or rupaya installed yet, run our installation script:
 `cd Apollo`
 `bash install-server.sh`.
 Follow the prompts and accept/enter when asked. Once finished you might be asked to close/restart the terminal.
-On a successfull install you should have `go-rupaya` as a directory alongside `Apollo`.
+On a successfull install you should have `rupaya` as a directory alongside `Apollo`.
 
 Optional: create a directory to store the masternode/chain data:
 `mkdir YOUR_DATADIR`
@@ -94,13 +94,13 @@ Nickname RUPAYA
 ### Run latest dev branch
 
 ```
-cd && git clone https://github.com/rupayaproject/go-rupaya && cd go-rupaya && git checkout rebrand && make rupaya && sudo rm  /usr/local/bin/rupaya && sudo cp build/bin/rupaya /usr/local/bin
+cd && git clone https://github.com/rupayaproject/rupaya && cd rupaya && git checkout rebrand && make rupaya && sudo rm  /usr/local/bin/rupaya && sudo cp build/bin/rupaya /usr/local/bin
 ```
 
 To return to the stable version:
 
 ```
-cd && cd go-rupaya && git checkout master && make rupaya && sudo rm  /usr/local/bin/rupaya && sudo cp build/bin/rupaya /usr/local/bin
+cd && cd rupaya && git checkout master && make rupaya && sudo rm  /usr/local/bin/rupaya && sudo cp build/bin/rupaya /usr/local/bin
 ```
 
 ---
@@ -115,7 +115,7 @@ On first install: `chmod: changing permissions of FILE/DIR denied`: rerun `chmod
 
 When updating via `git pull`: `error: Your local changes to the following files would be overwritten by merge:` Stash the local changes made by the `chmod` action by executing `git stash` first.
 
-## Upgrading go-rupaya
+## Upgrading rupaya
 
 Whenever new updates are available, please run `bash upgrade-rupaya.sh`.
 

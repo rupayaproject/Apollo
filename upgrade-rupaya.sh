@@ -20,15 +20,15 @@ echo installed version is $CURRENT
 source ~/.profile
 
 cd $HOME
-cd $HOME/go-rupaya && git checkout master && git pull && make all
+cd $HOME/rupaya && git checkout master && git pull && make all
 
 sudo rm  /usr/local/bin/rupaya
 sudo rm  /usr/local/bin/bootnode
 sudo rm  /usr/local/bin/puppeth
 
-sudo cp $HOME/go-rupaya/build/bin/rupaya /usr/local/bin
-sudo cp $HOME/go-rupaya/build/bin/bootnode /usr/local/bin
-sudo cp $HOME/go-rupaya/build/bin/puppeth /usr/local/bin
+sudo cp $HOME/rupaya/build/bin/rupaya /usr/local/bin
+sudo cp $HOME/rupaya/build/bin/bootnode /usr/local/bin
+sudo cp $HOME/rupaya/build/bin/puppeth /usr/local/bin
 
 cd $WORK_DIR
 
