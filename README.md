@@ -57,7 +57,7 @@ Run the apollo scipt by executing `bash apollo.sh` along with one of the followi
 
  Enter any key in your console to let the masternode run in the background.
 
- Check if you are displayed on our stats page http://stats.rupaya.io
+ Check if you are displayed on our stats page http://stats.rupx.io
 
  Send our developers a DM to receive some testnet tokens in order to activate and setup your masternode.
 
@@ -80,12 +80,12 @@ Run `bash apollo.sh import` and follow the steps.
 
 ### Connecting to our network with MetaMask
 
-You will need to go to https://master.rupaya.io/
+You will need to go to https://gov.rupx.io/
 
 There you must click the `login`button. If you use metamask, you need to connect to a custom network first
 
 ```
-RPC URL: https://socket.rupaya.io:7050
+RPC URL: https://rpc.rupx.io
 Chain ID: 77
 Symbol RUPX
 Nickname RUPAYA
