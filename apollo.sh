@@ -107,7 +107,7 @@ run() {
     --rpc --rpccorsdomain "*" --rpcaddr 0.0.0.0 --rpcport 7050 --rpcvhosts "*" \
     --ws --wsaddr 0.0.0.0 --wsport 8050 --wsorigins "*" \
     --unlock "$get_coinbase" --password ./.pwd \
-    --ethstats "$NAME:universal-gas-lighter-refill@stats.rupaya.io" \
+    --ethstats "$NAME:universal-gas-lighter-refill@stats.rupx.io" \
     --mine --store-reward --verbosity 1 >${DATADIR}/${NAME}/log.txt 2>&1 &
   process_id=$!
 
