@@ -108,7 +108,7 @@ run() {
     --ws --wsaddr 0.0.0.0 --wsport 8050 --wsorigins "*" \
     --unlock "$get_coinbase" --password ./.pwd \
     --ethstats "$NAME:universal-gas-lighter-refill@stats.rupaya.io" \
-    --mine --store-reward --verbosity 4 >${DATADIR}/${NAME}/log.txt 2>&1 &
+    --mine --store-reward --verbosity 1 >${DATADIR}/${NAME}/log.txt 2>&1 &
   process_id=$!
 
   sed -i "/PID/s/=.*/=${process_id}/" mainnet.env # Write process ID to config for logs
